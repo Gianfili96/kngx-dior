@@ -1,0 +1,123 @@
+.menu,
+a,
+.btn_header {
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header_licensing {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 5%;
+  transition: background 0.3s ease;
+
+  &.scrolled {
+    background: linear-gradient(to bottom, #000 0%, transparent 100%);
+  }
+
+  .logo {
+    margin-right: auto;
+
+    a {
+      color: #fff;
+      font-size: 28px;
+      font-weight: bold;
+      font-family: Inter;
+    }
+  }
+
+  nav {
+    margin-right: 60px;
+
+    .has-dropdown {
+      position: relative;
+    }
+
+    .dropdown {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #212121;
+      list-style: none;
+      border-radius: 10px;
+      padding: 0;
+      margin: 0 auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      min-width: 70px;
+      z-index: 100;
+      border: 1px solid #fff;
+      transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+    }
+
+    .has-dropdown.active .dropdown {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .dropdown li a {
+      display: block;
+      padding: 8px 6px;
+      white-space: nowrap;
+    }
+
+    .dropdown li a:hover {
+      background: #181818;
+    }
+  }
+
+  .menu {
+    list-style: none;
+  }
+
+  .menu li {
+    display: inline-block;
+    padding: 0 20px;
+
+    a {
+      font-size: 15px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #648bff;
+      }
+    }
+  }
+
+  .btn_header {
+    padding: 9px 25px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:
+      background-color 0.7s ease,
+      border-color 0.3s ease;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .btn_header:hover {
+    background-color: #ffffff;
+    border: 2px solid #000;
+
+    a {
+      color: #000;
+    }
+  }
+}

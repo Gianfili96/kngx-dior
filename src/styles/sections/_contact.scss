@@ -1,0 +1,140 @@
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+
+  h2 {
+    color: #000000;
+    margin-top: 70px;
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 400;
+  }
+
+  h3 {
+    color: #000000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 2rem;
+  }
+
+  .btn_contact {
+    width: 250px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    transition:
+      background-color 0.7s ease,
+      border-color 0.3s ease;
+
+    a {
+      color: #000000;
+      font-family: Inter;
+      font-size: 18px;
+    }
+  }
+
+  .btn_contact:hover {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+
+    a {
+      color: #ffffff;
+    }
+  }
+
+  #contact-form {
+    width: 500px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+
+    .contact-input {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      gap: 12px;
+
+      input {
+        width: 100%;
+        padding: 12px;
+        margin: 0;
+        border-radius: 10px;
+        border: none;
+        background-color: #ebebeb;
+        box-sizing: border-box;
+      }
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      background-color: #ebebeb;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        background-color: #dedede;
+      }
+    }
+
+    textarea {
+      height: 200px;
+      resize: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      background-color: #2f4ca3;
+      border: none;
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #446eeb;
+      }
+    }
+  }
+
+  .title_social {
+    width: 500px;
+    padding: 30px;
+
+    h3 {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: left;
+      letter-spacing: 3px;
+    }
+
+    .social {
+      margin-top: 10px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}

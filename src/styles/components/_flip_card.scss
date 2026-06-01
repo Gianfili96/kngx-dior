@@ -1,0 +1,23 @@
+.description {
+  padding: 8px;
+  background-color: #212121;
+  height: 100%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  p {
+    color: #fff;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+[data-plan] {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+[data-plan].flipping {
+  opacity: 0;
+  transform: scale(0.95);
+}

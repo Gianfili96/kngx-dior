@@ -1,0 +1,626 @@
+.licensing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+
+  h2 {
+    color: #fff;
+    font-family: Inter;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 120px;
+  }
+
+  h3 {
+    color: #fff;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .btn_info {
+    color: #fff;
+    border: 2px solid #fff;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    margin: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+      background 0.3s ease,
+      color 0.3s ease;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+
+      a {
+        color: #000;
+        font-size: 20px;
+      }
+    }
+
+    a {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    margin: 70px;
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 20px 10%;
+    position: relative;
+    justify-content: space-between;
+
+    .card_basic {
+      position: relative;
+      width: 250px;
+      height: 600px;
+      border-radius: 30px;
+      border: 2px solid #212121;
+      background: rgb(255, 255, 255, 0.8); // quasi trasparente
+      backdrop-filter: blur(500px); // effetto vetro opaco
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.6);
+
+      .title {
+        width: 100%;
+        height: 68px;
+        background-color: #e3edff;
+        color: #000000;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Inter;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .price {
+        margin-top: 20px;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Inter;
+        font-size: 42px;
+        font-weight: bold;
+
+        p {
+          font-size: 22px;
+        }
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 40px;
+
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          width: 230px; // larghezza fissa uguale per tutti
+          color: #000;
+          font-family: Inter;
+          font-size: 14px;
+
+          img {
+            width: 17px;
+            height: 17px;
+            flex-shrink: 0;
+          }
+        }
+      }
+
+      .btn_license {
+        position: absolute;
+        bottom: 30px;
+        width: 160px;
+        height: 31px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: #e3edff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          color: #000;
+          font-family: Inter;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+    }
+
+    .card_premium {
+      width: 250px;
+      height: 600px;
+      border-radius: 30px;
+      border: 2px solid #212121;
+      background: rgb(255, 255, 255, 0.8); // quasi trasparente
+      backdrop-filter: blur(500px); // effetto vetro opaco
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.6);
+
+      .title {
+        width: 100%;
+        height: 68px;
+        background-color: #e3edff;
+        color: #000000;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Inter;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .price {
+        margin-top: 20px;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Inter;
+        font-size: 42px;
+        font-weight: bold;
+
+        p {
+          font-size: 22px;
+        }
+      }
+
+      .subtitle {
+        width: 100%;
+        height: 32px;
+        flex-shrink: 0;
+        background-color: #2f4ca3;
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 40px;
+
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          width: 230px; // larghezza fissa uguale per tutti
+          color: #000;
+          font-family: Inter;
+          font-size: 14px;
+
+          img {
+            width: 17px;
+            height: 17px;
+            flex-shrink: 0;
+          }
+        }
+      }
+
+      .btn_license {
+        position: absolute;
+        bottom: 30px;
+        width: 160px;
+        height: 31px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: #e3edff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          color: #000;
+          font-family: Inter;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+    }
+
+    .card_premium_home_plus {
+      width: 250px;
+      height: 600px;
+      border-radius: 30px;
+      border: 2px solid #212121;
+      background: #2f4ca3; // quasi trasparente
+      backdrop-filter: blur(500px); // effetto vetro opaco
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.6);
+
+      .title {
+        width: 100%;
+        height: 68px;
+        background-color: #e3edff;
+        color: #000000;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Inter;
+        font-size: 25px;
+        font-weight: bold;
+
+        .subtitle {
+          position: absolute;
+          top: -17px;
+          border-radius: 10px;
+          border: 1px solid #000;
+          width: 100px;
+          height: 32px;
+          background-color: #2f4ca3;
+          font-family: Inter;
+          font-weight: 400;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+        }
+      }
+
+      .price {
+        margin-top: 20px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Inter;
+        font-size: 42px;
+        font-weight: bold;
+
+        p {
+          font-size: 22px;
+        }
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 40px;
+
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          width: 230px; // larghezza fissa uguale per tutti
+          color: #ffffff;
+          font-family: Inter;
+          font-size: 14px;
+
+          img {
+            width: 17px;
+            height: 17px;
+            flex-shrink: 0;
+          }
+        }
+      }
+
+      .btn_license {
+        position: absolute;
+        bottom: 30px;
+        width: 160px;
+        height: 31px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: #e3edff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          color: #000;
+          font-family: Inter;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+    }
+
+    .card_unlimited {
+      position: relative;
+      width: 250px;
+      height: 600px;
+      border-radius: 30px;
+      border: 2px solid #212121;
+      background: rgb(255, 255, 255, 0.8); // quasi trasparente
+      backdrop-filter: blur(500px); // effetto vetro opaco
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.6);
+
+      .title {
+        width: 100%;
+        height: 68px;
+        background-color: #e3edff;
+        color: #000000;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Inter;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .price {
+        margin-top: 20px;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Inter;
+        font-size: 42px;
+        font-weight: bold;
+
+        p {
+          font-size: 22px;
+        }
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 40px;
+
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          width: 230px; // larghezza fissa uguale per tutti
+          color: #000;
+          font-family: Inter;
+          font-size: 14px;
+
+          img {
+            width: 17px;
+            height: 17px;
+            flex-shrink: 0;
+          }
+        }
+      }
+
+      .btn_license {
+        position: absolute;
+        bottom: 30px;
+        width: 160px;
+        height: 31px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: #e3edff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+
+        a {
+          color: #000;
+          font-family: Inter;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .card_exclusive {
+    width: 1060px;
+    height: 305px;
+    border: 1px solid #212121;
+    border-radius: 30px;
+    background: rgb(255, 255, 255, 0.8); // quasi trasparente
+    backdrop-filter: blur(500px); // effetto vetro opaco
+
+    .title {
+      width: 100%;
+      height: 50px;
+      background-color: #2f4ca3;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      color: #ffffff;
+      font-family: Inter;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .card_content {
+      display: flex;
+      flex-direction: row;
+
+      .card_hero {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        width: 530px;
+
+        h3 {
+          color: #000;
+          font-family: Inter;
+          font-size: 30px;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 300;
+          font-family: Inter;
+          width: 400px;
+          margin-bottom: 10px;
+        }
+
+        .btn_make {
+          width: 145px;
+          height: 40px;
+          border-radius: 20px;
+          background-color: #2f4ca3;
+          margin-top: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition:
+            background-color 0.7s ease,
+            border-color 0.3s ease;
+
+          a {
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 16px;
+          }
+        }
+
+        .btn_make:hover {
+          background-color: #4574ff;
+        }
+      }
+
+      .card_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 530px; // sposta la larghezza fissa qui, dal li
+
+        h3 {
+          grid-column: 1 / -1; // occupa tutta la riga
+          font-family: Inter;
+          font-size: 26px;
+          color: #2f4ca3;
+          font-weight: bold;
+          text-align: left;
+          margin-left: 30px;
+        }
+
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          // rimuovi width: 530px da qui
+          color: #000;
+          font-family: Inter;
+          font-size: 14px;
+
+          img {
+            width: 17px;
+            height: 17px;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .custom_product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      margin-top: 20px;
+      font-family: Inter;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .contact_me {
+      width: 140px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #fff;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition:
+        background-color 0.7s ease,
+        border-color 0.3s ease;
+
+      a {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+      }
+    }
+
+    .contact_me:hover {
+      background-color: #000000;
+      border: 2px solid #fff;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}

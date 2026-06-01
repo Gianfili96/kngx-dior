@@ -1,0 +1,117 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/public/images/sfondoKNGX.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; // hero_section centrata, hero_icons in basso
+
+  .hero_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    gap: 16px;
+    flex: 1;
+    justify-content: center;
+
+    h3 {
+      color: #f7f7f7;
+      font-family: Inter;
+      font-weight: 300;
+      font-size: 28px;
+    }
+
+    h1 {
+      color: #fff;
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 65px;
+    }
+
+    h2 {
+      font-family: Inter;
+      color: #fff;
+      font-weight: 300;
+      font-size: 32px;
+    }
+  }
+
+  .hero_button {
+    display: flex;
+    width: 420px;
+    padding: 5px;
+    justify-content: center;
+    margin-top: 20px;
+
+    .btn_find {
+      width: 160px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: #2f4ca3;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        background-color 0.7s ease,
+        border-color 0.3s ease;
+
+      a {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+
+    .btn_find:hover {
+        background-color: #4574ff;
+        color: #000;
+    }
+
+    .btn_contact {
+      width: 240px;
+      height: 50px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background: trasparent;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition:
+        background-color 0.7s ease,
+        border-color 0.3s ease;
+
+      a {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+
+    .btn_contact:hover {
+      background-color: #ffffff;
+      border: 2px solid #000;
+
+      a {
+        color: #000;
+      }
+    }
+  }
+
+  .hero_icons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 32px;
+
+    img {
+      opacity: 0.5;
+    }
+  }
+}

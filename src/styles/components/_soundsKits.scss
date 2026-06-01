@@ -1,0 +1,22 @@
+.sound_kits {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E3EDFF;
+
+  h2 {
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 70px;
+  }
+
+  h3 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 30px;
+    text-align: center;
+  }
+}

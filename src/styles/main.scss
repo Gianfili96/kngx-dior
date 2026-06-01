@@ -1,0 +1,20 @@
+@use "/src/styles/components/header";
+@use "/src/styles/components/hero";
+@use "/src/styles/components/beatstore";
+@use "/src/styles/components/licensing";
+@use "/src/styles/components/soundsKits";
+@use "/src/styles/components/about_me";
+@use "/src/styles/sections/footer";
+@use "/src/styles/sections/header_licensing";
+@use "/src/styles/sections/page_licensing";
+@use "/src/styles/base/variables";
+@use "/src/styles/sections/contact";
+@use "/src/styles/sections/header_contact";
+@use "/src/styles/components/modal";
+@use "/src/styles/components/flip_card";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
