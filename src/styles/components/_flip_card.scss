@@ -14,10 +14,19 @@
 }
 
 [data-plan] {
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 [data-plan].flipping {
   opacity: 0;
   transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .description {
+   border-radius: 0;
+   flex: 1;
+  }
 }

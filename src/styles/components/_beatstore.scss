@@ -19,6 +19,17 @@
     margin-top: 10px;
   }
 
+  .iframe_wrapper {
+      padding: 0 16px;
+      box-sizing: border-box;
+      width: 100%;
+
+      iframe {
+        margin: 40px auto;
+        border-radius: 6px;
+      }
+    }
+
   .payments {
     display: flex;
     flex-direction: column;
@@ -54,7 +65,9 @@
     margin: 0 auto;
     padding: 100px 40px;
 
-    .select {
+    .select,
+    .checkout,
+    .checkInBox {
       border: 1px solid #727272;
       border-radius: 10px;
       background-color: #181818;
@@ -63,7 +76,9 @@
       flex-shrink: 1;
       padding: 3px;
 
-      .select_header {
+      .select_header,
+      .checkout_header,
+      .checkInBox_header {
         display: flex;
         padding: 10px;
         color: #fff;
@@ -90,74 +105,127 @@
     }
 
     .checkout {
-      border: 1px solid #727272;
-      border-radius: 10px;
       margin-left: 30px;
       margin-right: 30px;
-      background-color: #181818;
-      width: 400px;
-      height: 153px;
-      flex-shrink: 1;
-      padding: 3px;
+    }
+  }
 
-      .checkout_header {
-        display: flex;
-        padding: 10px;
-        color: #fff;
-        font-family: Inter;
+  /* ── Tablet (max 1024px) ── */
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 50px;
+    }
+    h3 {
+      font-size: 22px;
+    }
 
-        img {
-          width: 30px;
-          height: 30px;
-        }
-
-        h4 {
-          align-self: center;
-          margin-left: 10px;
-          font-size: 22px;
-          font-weight: 400;
-        }
+    .payments {
+      h4 {
+        font-size: 22px;
       }
-
-      p {
-        color: #dbdbdb;
-        padding: 10px;
-        font-family: Inter;
+      h5 {
+        font-size: 20px;
       }
     }
 
-    .checkInBox {
-      border: 1px solid #727272;
-      border-radius: 10px;
-      background-color: #181818;
-      width: 400px;
-      height: 153px;
-      flex-shrink: 1;
-      padding: 3px;
+    .beatstore_card {
+      padding: 60px 30px;
 
-      .checkInBox_header {
-        display: flex;
-        padding: 10px;
-        color: #fff;
-        font-family: Inter;
+      .select,
+      .checkout,
+      .checkInBox {
+        width: 300px;
+      }
+    }
+  }
 
-        img {
-          width: 30px;
-          height: 30px;
-        }
+  /* ── Mobile (max 768px) ── */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 36px;
+      margin-top: 50px;
+      text-align: center;
+      padding: 0 20px;
+    }
 
-        h4 {
-          align-self: center;
-          margin-left: 10px;
-          font-size: 22px;
-          font-weight: 400;
-        }
+    h3 {
+      font-size: 18px;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .iframe_wrapper {
+      padding: 0 16px;
+      box-sizing: border-box;
+      width: 100%;
+
+      iframe {
+        margin: 40px auto;
+        border-radius: 6px;
+      }
+    }
+
+    .payments {
+      padding: 0 20px;
+      text-align: center;
+
+      h4 {
+        font-size: 18px;
+      }
+      h5 {
+        font-size: 16px;
       }
 
-      p {
-        color: #dbdbdb;
-        padding: 10px;
-        font-family: Inter;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .beatstore_card {
+      flex-direction: column;
+      padding: 40px 20px;
+      gap: 16px;
+
+      .select,
+      .checkout,
+      .checkInBox {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+
+      .checkout {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  /* ── Small mobile (max 480px) ── */
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+
+    .beatstore_card {
+      .select,
+      .checkout,
+      .checkInBox {
+        .select_header,
+        .checkout_header,
+        .checkInBox_header {
+          h4 {
+            font-size: 18px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+        }
       }
     }
   }

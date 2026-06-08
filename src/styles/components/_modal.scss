@@ -2,40 +2,82 @@
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.55);
   z-index: 1000;
   align-items: center;
   justify-content: center;
 }
+
 .modal-overlay.open {
   display: flex;
 }
+
 .modal-box {
   background: #fff;
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 480px;
-  width: 90%;
+  border-radius: 14px;
+  padding: 2rem 2.5rem;
+  max-width: 620px; /* più largo per testo lungo */
+  width: 92%;
+  max-height: 80vh; /* non sfora lo schermo */
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
 }
+
 .modal-title {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 0 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee; /* separa visivamente il titolo */
 }
+
 .modal-body {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #555;
-  margin: 0 0 1.5rem;
+  font-size: 13.5px;
+  line-height: 1.85; /* interlinea ampia, più leggibile */
+  color: #444;
+  white-space: pre-wrap; /* rispetta i ritorni a capo del testo */
+  overflow-y: auto; /* scroll interno al body */
+  flex: 1;
+  padding-right: 0.5rem;
+
+  /* scrollbar discreta */
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 10px;
+  }
 }
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid #eee; /* separa visivamente il footer */
+}
+
 .modal-close {
-  padding: 8px 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 9px 24px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   background: transparent;
-  font-size: 14px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #333;
   cursor: pointer;
-}
-.modal-close:hover {
-  background: #f5f5f5;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+
+  &:hover {
+    background: #f5f5f5;
+    border-color: #bbb;
+  }
 }

@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; // hero_section centrata, hero_icons in basso
+  justify-content: space-between;
 
   .hero_section {
     display: flex;
@@ -31,6 +31,7 @@
       font-family: Inter;
       font-weight: 500;
       font-size: 65px;
+      margin-top: 50px;
     }
 
     h2 {
@@ -69,8 +70,7 @@
     }
 
     .btn_find:hover {
-        background-color: #4574ff;
-        color: #000;
+      background-color: #4574ff;
     }
 
     .btn_contact {
@@ -78,7 +78,7 @@
       height: 50px;
       border: 2px solid #fff;
       border-radius: 10px;
-      background: trasparent;
+      background: transparent;
       margin: 10px;
       display: flex;
       align-items: center;
@@ -106,12 +106,148 @@
 
   .hero_icons {
     display: flex;
-    align-items: center;
-    gap: 24px;
+    overflow: hidden;
     padding-bottom: 32px;
+    margin-top: 30px;
+    width: 100%;
 
-    img {
-      opacity: 0.5;
+    .marquee_track {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      width: max-content;
+      animation: marquee 40s linear infinite;
+      will-change: transform;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      a {
+        display: flex;
+        flex-shrink: 0;
+
+        img {
+          opacity: 0.5;
+          display: block;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* ── Tablet (max 1024px) ── */
+  @media (max-width: 1024px) {
+    .hero_section {
+      h3 {
+        font-size: 22px;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      h2 {
+        font-size: 26px;
+      }
+    }
+
+    .hero_button {
+      width: 360px;
+
+      .btn_find a,
+      .btn_contact a {
+        font-size: 20px;
+      }
+    }
+  }
+
+  /* ── Mobile (max 768px) ── */
+  @media (max-width: 768px) {
+    .hero_section {
+      margin-top: 80px;
+      padding: 0 20px;
+
+      h3 {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-top: 24px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    .hero_button {
+      width: 100%;
+      padding: 0 20px;
+      flex-direction: column;
+      align-items: center;
+
+      .btn_find,
+      .btn_contact {
+        width: 100%;
+        max-width: 240px;
+        margin: 6px 0;
+
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .hero_icons {
+      padding-bottom: 20px;
+
+      .marquee_track {
+        gap: 32px;
+
+        img {
+          width: 200px;
+          height: 200px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  /* ── Small mobile (max 480px) ── */
+  @media (max-width: 480px) {
+    .hero_section {
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 14px;
+      }
+    }
+
+    .hero_button {
+      .btn_find,
+      .btn_contact {
+        max-width: 220px;
+
+        a {
+          font-size: 16px;
+        }
+      }
     }
   }
 }

@@ -66,17 +66,18 @@
     position: relative;
     justify-content: space-between;
 
-    .card_basic {
-      position: relative;
+    .card_basic,
+    .card_premium,
+    .card_premium_home_plus,
+    .card_unlimited {
       width: 250px;
       height: 600px;
       border-radius: 30px;
       border: 2px solid #212121;
-      background: rgb(255, 255, 255, 0.8); // quasi trasparente
-      backdrop-filter: blur(500px); // effetto vetro opaco
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
       box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.6);
 
       .title {
@@ -122,7 +123,7 @@
           display: flex;
           align-items: center;
           gap: 8px;
-          width: 230px; // larghezza fissa uguale per tutti
+          width: 230px;
           color: #000;
           font-family: Inter;
           font-size: 14px;
@@ -156,50 +157,14 @@
       }
     }
 
+    .card_basic,
+    .card_premium,
+    .card_unlimited {
+      background: rgb(255, 255, 255, 0.8);
+      backdrop-filter: blur(500px);
+    }
+
     .card_premium {
-      width: 250px;
-      height: 600px;
-      border-radius: 30px;
-      border: 2px solid #212121;
-      background: rgb(255, 255, 255, 0.8); // quasi trasparente
-      backdrop-filter: blur(500px); // effetto vetro opaco
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.6);
-
-      .title {
-        width: 100%;
-        height: 68px;
-        background-color: #e3edff;
-        color: #000000;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Inter;
-        font-size: 25px;
-        font-weight: bold;
-      }
-
-      .price {
-        margin-top: 20px;
-        color: #000;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: Inter;
-        font-size: 42px;
-        font-weight: bold;
-
-        p {
-          font-size: 22px;
-        }
-      }
-
       .subtitle {
         width: 100%;
         height: 32px;
@@ -212,248 +177,34 @@
         align-items: center;
         justify-content: center;
       }
-
-      .list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-top: 40px;
-
-        li {
-          list-style: none;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          width: 230px; // larghezza fissa uguale per tutti
-          color: #000;
-          font-family: Inter;
-          font-size: 14px;
-
-          img {
-            width: 17px;
-            height: 17px;
-            flex-shrink: 0;
-          }
-        }
-      }
-
-      .btn_license {
-        position: absolute;
-        bottom: 30px;
-        width: 160px;
-        height: 31px;
-        border: 1px solid #000;
-        border-radius: 5px;
-        background-color: #e3edff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        a {
-          color: #000;
-          font-family: Inter;
-          font-weight: 400;
-          margin: 0;
-        }
-      }
     }
 
     .card_premium_home_plus {
-      width: 250px;
-      height: 600px;
-      border-radius: 30px;
-      border: 2px solid #212121;
-      background: #2f4ca3; // quasi trasparente
-      backdrop-filter: blur(500px); // effetto vetro opaco
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.6);
-
-      .title {
-        width: 100%;
-        height: 68px;
-        background-color: #e3edff;
-        color: #000000;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Inter;
-        font-size: 25px;
-        font-weight: bold;
-
-        .subtitle {
-          position: absolute;
-          top: -17px;
-          border-radius: 10px;
-          border: 1px solid #000;
-          width: 100px;
-          height: 32px;
-          background-color: #2f4ca3;
-          font-family: Inter;
-          font-weight: 400;
-          font-size: 14px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #fff;
-        }
-      }
+      background: #2f4ca3;
 
       .price {
-        margin-top: 20px;
-        color: #ffffff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: Inter;
-        font-size: 42px;
-        font-weight: bold;
-
-        p {
-          font-size: 22px;
-        }
+        color: #fff;
       }
 
-      .list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-top: 40px;
-
-        li {
-          list-style: none;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          width: 230px; // larghezza fissa uguale per tutti
-          color: #ffffff;
-          font-family: Inter;
-          font-size: 14px;
-
-          img {
-            width: 17px;
-            height: 17px;
-            flex-shrink: 0;
-          }
-        }
+      .list li {
+        color: #fff;
       }
 
-      .btn_license {
+      .title .subtitle {
         position: absolute;
-        bottom: 30px;
-        width: 160px;
-        height: 31px;
+        top: -17px;
+        border-radius: 10px;
         border: 1px solid #000;
-        border-radius: 5px;
-        background-color: #e3edff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        a {
-          color: #000;
-          font-family: Inter;
-          font-weight: 400;
-          margin: 0;
-        }
-      }
-    }
-
-    .card_unlimited {
-      position: relative;
-      width: 250px;
-      height: 600px;
-      border-radius: 30px;
-      border: 2px solid #212121;
-      background: rgb(255, 255, 255, 0.8); // quasi trasparente
-      backdrop-filter: blur(500px); // effetto vetro opaco
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.6);
-
-      .title {
-        width: 100%;
-        height: 68px;
-        background-color: #e3edff;
-        color: #000000;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 100px;
+        height: 32px;
+        background-color: #2f4ca3;
         font-family: Inter;
-        font-size: 25px;
-        font-weight: bold;
-      }
-
-      .price {
-        margin-top: 20px;
-        color: #000;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: Inter;
-        font-size: 42px;
-        font-weight: bold;
-
-        p {
-          font-size: 22px;
-        }
-      }
-
-      .list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-top: 40px;
-
-        li {
-          list-style: none;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          width: 230px; // larghezza fissa uguale per tutti
-          color: #000;
-          font-family: Inter;
-          font-size: 14px;
-
-          img {
-            width: 17px;
-            height: 17px;
-            flex-shrink: 0;
-          }
-        }
-      }
-
-      .btn_license {
-        position: absolute;
-        bottom: 30px;
-        width: 160px;
-        height: 31px;
-        border: 1px solid #000;
-        border-radius: 5px;
-        background-color: #e3edff;
+        font-weight: 400;
+        font-size: 14px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 50px;
-
-        a {
-          color: #000;
-          font-family: Inter;
-          font-weight: 400;
-          margin: 0;
-        }
+        color: #fff;
       }
     }
   }
@@ -463,8 +214,8 @@
     height: 305px;
     border: 1px solid #212121;
     border-radius: 30px;
-    background: rgb(255, 255, 255, 0.8); // quasi trasparente
-    backdrop-filter: blur(500px); // effetto vetro opaco
+    background: rgb(255, 255, 255, 0.8);
+    backdrop-filter: blur(500px);
 
     .title {
       width: 100%;
@@ -533,10 +284,10 @@
             font-weight: 700;
             font-size: 16px;
           }
-        }
 
-        .btn_make:hover {
-          background-color: #4574ff;
+          &:hover {
+            background-color: #4574ff;
+          }
         }
       }
 
@@ -544,10 +295,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        width: 530px; // sposta la larghezza fissa qui, dal li
+        width: 530px;
 
         h3 {
-          grid-column: 1 / -1; // occupa tutta la riga
+          grid-column: 1 / -1;
           font-family: Inter;
           font-size: 26px;
           color: #2f4ca3;
@@ -561,7 +312,6 @@
           display: flex;
           align-items: center;
           gap: 8px;
-          // rimuovi width: 530px da qui
           color: #000;
           font-family: Inter;
           font-size: 14px;
@@ -581,6 +331,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
+
     h2 {
       font-size: 40px;
     }
@@ -613,14 +364,152 @@
         font-weight: bold;
         color: #000;
       }
+
+      &:hover {
+        background-color: #000000;
+        border: 2px solid #fff;
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  /* ── Tablet (max 1024px) ── */
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 70px;
+      margin-top: 80px;
+    }
+    h3 {
+      font-size: 22px;
     }
 
-    .contact_me:hover {
-      background-color: #000000;
-      border: 2px solid #fff;
-      a {
-        color: #ffffff;
+    .card {
+      gap: 16px;
+      padding: 20px 4%;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0 20px;
+
+      .card_basic,
+      .card_premium,
+      .card_premium_home_plus,
+      .card_unlimited {
+        width: 220px;
       }
+    }
+
+    .card_exclusive {
+      width: 90%;
+      height: auto;
+
+      .card_content {
+        .card_hero {
+          width: 50%;
+          p {
+            width: 100%;
+          }
+        }
+
+        .card_list {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  /* ── Mobile (max 768px) ── */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 42px;
+      margin-top: 60px;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    h3 {
+      font-size: 16px;
+      padding: 0 20px;
+    }
+
+    .card {
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0 20px;
+      padding: 20px;
+      gap: 24px;
+
+      .card_basic,
+      .card_premium,
+      .card_premium_home_plus,
+      .card_unlimited {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        padding-bottom: 80px; /* spazio per btn_license absolute */
+      }
+
+      .card_basic .list li,
+      .card_premium .list li,
+      .card_premium_home_plus .list li,
+      .card_unlimited .list li {
+        width: 100%;
+        max-width: 280px;
+      }
+    }
+
+    .card_exclusive {
+      width: 90%;
+      height: auto;
+
+      .card_content {
+        flex-direction: column;
+
+        .card_hero {
+          width: 100%;
+          p {
+            width: 100%;
+          }
+        }
+
+        .card_list {
+          width: 100%;
+          padding: 0 20px 20px;
+
+          h3 {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .custom_product {
+      margin-bottom: 60px;
+      padding: 0 20px;
+
+      h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  /* ── Small mobile (max 480px) ── */
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 32px;
+    }
+
+    .card_exclusive .title {
+      font-size: 22px;
+    }
+
+    .custom_product h2 {
+      font-size: 24px;
     }
   }
 }

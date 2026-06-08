@@ -41,14 +41,13 @@
       font-family: Inter;
       font-size: 18px;
     }
-  }
 
-  .btn_contact:hover {
-    background-color: #000000;
-    border: 2px solid #ffffff;
-
-    a {
-      color: #ffffff;
+    &:hover {
+      background-color: #000000;
+      border: 2px solid #ffffff;
+      a {
+        color: #ffffff;
+      }
     }
   }
 
@@ -134,6 +133,65 @@
       img {
         width: 35px;
         height: 35px;
+      }
+    }
+  }
+
+  /* ── Tablet (max 1024px) ── */
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: 48px;
+    }
+
+    #contact-form {
+      width: 420px;
+    }
+    .title_social {
+      width: 420px;
+    }
+  }
+
+  /* ── Mobile (max 768px) ── */
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 32px;
+      margin-top: 50px;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    h3 {
+      padding: 0 20px;
+      font-size: 15px;
+    }
+
+    #contact-form {
+      width: 100%;
+      padding: 20px;
+
+      .contact-input {
+        flex-direction: column; /* nome e cognome in colonna */
+        gap: 10px;
+      }
+    }
+
+    .title_social {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  /* ── Small mobile (max 480px) ── */
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 26px;
+    }
+    .btn_contact {
+      width: 200px;
+      a {
+        font-size: 16px;
       }
     }
   }
