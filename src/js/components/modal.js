@@ -80,8 +80,8 @@ const agreements = {
     By purchasing this license, Licensee confirms they have read, understood and agreed to all terms listed above.`,
   },
   2: {
-  title: "License Agreement — PREMIUM LEASE",
-  body: `NON-EXCLUSIVE LICENSE AGREEMENT
+    title: "License Agreement — PREMIUM LEASE",
+    body: `NON-EXCLUSIVE LICENSE AGREEMENT
 
     This Premium Lease Agreement ("Agreement") is entered into by and between KNGX DIOR ("Producer", "Licensor") and the purchaser of this license ("Artist", "Licensee") regarding the instrumental beat purchased through BeatStars.
 
@@ -159,11 +159,11 @@ const agreements = {
     14. BREACH OF AGREEMENT
     Any violation results in IMMEDIATE license termination. The Producer reserves the right to issue copyright claims, takedown requests, and pursue legal action under Italian law.
 
-    By purchasing this license, Licensee confirms they have read, understood and agreed to all terms listed above.`
-    },
+    By purchasing this license, Licensee confirms they have read, understood and agreed to all terms listed above.`,
+  },
   3: {
-  title: "License Agreement — PREMIUM PLUS LEASE",
-  body: `NON-EXCLUSIVE LICENSE AGREEMENT
+    title: "License Agreement — PREMIUM PLUS LEASE",
+    body: `NON-EXCLUSIVE LICENSE AGREEMENT
 
   This Premium Plus Lease Agreement ("Agreement") is entered into by and between KNGX DIOR ("Producer", "Licensor") and the purchaser of this license ("Artist", "Licensee") regarding the instrumental beat purchased through BeatStars.
 
@@ -257,11 +257,11 @@ const agreements = {
   14. BREACH OF AGREEMENT
   Any violation results in IMMEDIATE license termination. The Producer reserves the right to issue copyright claims, takedown requests, and pursue legal action under Italian law.
 
-  By purchasing this license, Licensee confirms they have read, understood and agreed to all terms listed above.`
-},
+  By purchasing this license, Licensee confirms they have read, understood and agreed to all terms listed above.`,
+  },
   4: {
-  title: "License Agreement — UNLIMITED LEASE",
-  body: `NON-EXCLUSIVE LICENSE AGREEMENT
+    title: "License Agreement — UNLIMITED LEASE",
+    body: `NON-EXCLUSIVE LICENSE AGREEMENT
 
   This Unlimited Lease Agreement ("Agreement") is entered into by and between KNGX DIOR ("Producer", "Licensor") and the purchaser of this license ("Artist", "Licensee") regarding the instrumental beat purchased through BeatStars.
 
@@ -355,15 +355,65 @@ const agreements = {
   14. BREACH OF AGREEMENT
   Any violation results in IMMEDIATE license termination. The Producer reserves the right to issue copyright claims, takedown requests, and pursue legal action under Italian law.
 
-  By purchasing this license, Licensee confirms they have read, understood and agreed to all terms listed above.`
-},
+  By purchasing this license, Licensee confirms they have read, understood and agreed to all terms listed above.`,
+  },
+  5: {
+    title: "Website Terms of Use",
+    body: `TERMS OF USE
+
+  Free downloads are available for demoing and NON-PROFIT ONLY (YouTube and SoundCloud). A license must be purchased to use and release this beat instrumentally commercially on streaming platforms. Releasing without a license will result in COPYRIGHT STRIKE and legal actions. Credit KNGX DIOR as Producer/Composer.
+
+  Effective date: July 8, 2024
+
+  CAREFULLY READ THESE TERMS AND CONDITIONS. BY AVAILING YOURSELF OF THE WEBSITE OR RELATED SERVICES, YOU ARE CONSENTING TO BE BOUND BY THESE TERMS AND CONDITIONS.
+
+  1. USE OF MATERIALS
+  Materials on the Website (artwork, text, video, audio, software, etc.) are protected by copyright and international laws. You may only access and use Materials for personal or educational purposes. You may not reproduce, distribute, publicly perform, modify or create derivative works of the Materials without authorization from the copyright owner(s).
+  For logo usage inquiries, contact: kngmxrio.music@gmail.com
+
+  2. COPYRIGHT & TRADEMARK INFRINGEMENT
+  BeatStars does not own the Content posted to the Website. All Content is posted by us and we have warranted that it does not infringe any third party's rights. Buyers are subject to clear any samples on any composition purchased.
+  To report infringement, contact: kngmxrio.music@gmail.com
+
+  3. REFUND POLICY
+  We do not offer refunds. For issues with a premium service or ordered item, contact kngmxrio.music@gmail.com immediately.
+  - Premium (recurring) services can be canceled anytime; cancellations are effective after the paid period
+  - No reimbursement for the already-paid period upon cancellation
+  - We reserve the right to cancel premium services at any time; a pro-rated refund may apply if canceled before expiration
+  - No refund will be given if a user violates the Terms and Conditions or any relevant License Agreement
+  To cancel, email kngmxrio.music@gmail.com with your cancellation request and artist name or order ID.
+
+  4. YOUR CONDUCT
+  You shall use the Website for lawful purposes only. You may not post or transmit any material that is unlawful, threatening, abusive, defamatory, obscene or otherwise objectionable. We reserve the right to refuse service, terminate accounts, and/or cancel orders at our sole discretion.
+
+  5. CONTENT
+  Content on the Website may contain profanity or material inappropriate for minors. We recommend parental supervision for children's online activities. Contact us to report any offensive material.
+
+  6. WARRANTY DISCLAIMER
+  THE WEBSITE AND RELATED SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND. WE ARE NOT LIABLE FOR ANY INTERRUPTIONS, ERRORS, OR DAMAGES ARISING FROM USE OF THE WEBSITE. IT IS YOUR RESPONSIBILITY TO EVALUATE THE ACCURACY AND USEFULNESS OF ANY CONTENT PROVIDED.
+
+  7. LIMITATION OF LIABILITY
+  By using the Website, you agree to release and hold us, BeatStars and all affiliated parties harmless from any losses, damages, rights, claims or actions arising from use of the Website, Materials or related services. IN NO EVENT WILL WE OR BEATSTARS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF YOUR USE OF MATERIALS.
+
+  8. GENERAL PROVISIONS
+  These Terms and Conditions are governed by the laws of Palermo, IT. Legal proceedings shall be brought exclusively in the courts of Palermo, IT. If any provision is held invalid, the remaining provisions shall remain in full effect.
+
+  9. YOUTUBE
+  By accessing the Website, you agree to YouTube's Terms of Service.
+
+  10. AGE REQUIREMENTS
+  This Service is available for individuals aged 13 years or older. Users aged 13–17 should review these Terms with a parent or guardian.
+
+  11. MODIFICATIONS
+  We may modify these Terms and Conditions at any time at our sole discretion. Modifications are effective when posted. It is your responsibility to review these Terms periodically. Continued use of the Website constitutes acceptance of any modifications.`,
+  },
 };
 
 const overlay = document.getElementById("modal-overlay");
 const titleEl = document.getElementById("modal-title");
 const bodyEl = document.getElementById("modal-body");
 
-document.querySelectorAll(".btn_agreement a").forEach((btn) => {
+document.querySelectorAll(".btn_agreement a, .box-2 a").forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
     const id = btn.dataset.modal;
