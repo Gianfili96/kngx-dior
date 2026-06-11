@@ -12,6 +12,8 @@
     />
     <script src="./src/js/components/header.js" defer></script>
     <script src="./src/js/components/flipCard.js" defer></script>
+    <script src="./src/js/components/modal.js" defer></script>
+    <script src="./src/js/components/promo_modal.js" defer></script>
     <title>KNGX DIOR</title>
   </head>
   <body>
@@ -445,24 +447,24 @@
           Check out my custom beats options.
         </h3>
         <div class="iframe_wrapper">
-        <iframe
-          src="https://kngxdior.gumroad.com"
-          width="100%"
-          height="800"
-          style="
-            width: 100%;
-            height: 1200px;
-            margin: 100px auto;
-            display: block;
-            max-width: 1200px;
-            max-height: 96vh;
-            border-radius: 10px;
-            border: 2px solid white;
-            -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px;
-          "
-        >
-        </iframe>
+          <iframe
+            src="https://kngxdior.gumroad.com"
+            width="100%"
+            height="800"
+            style="
+              width: 100%;
+              height: 1200px;
+              margin: 100px auto;
+              display: block;
+              max-width: 1200px;
+              max-height: 96vh;
+              border-radius: 10px;
+              border: 2px solid white;
+              -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px;
+              box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px;
+            "
+          >
+          </iframe>
         </div>
       </section>
       <section class="about_me">
@@ -500,12 +502,48 @@
         <p>Copyright © 2026 by KNGX DIOR</p>
       </div>
       <div class="box-2">
-        <a href="">Terms of services</a>
+        <a href="" data-modal="5">Terms of services</a>
+        <a href="" data-modal="6">Policy privacy</a>
       </div>
       <div class="box-3">
         <a href=""><img src="./public/images/instagram.png" alt="" /></a>
         <a href=""><img src="./public/images/tiktok.png" alt="" /></a>
       </div>
     </footer>
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal-box">
+        <p class="modal-title" id="modal-title"></p>
+        <p class="modal-body" id="modal-body"></p>
+        <button class="modal-close" id="modal-close-btn">Chiudi</button>
+      </div>
+    </div>
+
+    <div id="promo-overlay">
+      <div class="promo-modal" id="promo-modal">
+        <button class="promo-close" id="promo-close" aria-label="Chiudi">
+          ✕
+        </button>
+
+        <span class="promo-badge">Offerta a tempo limitato</span>
+
+        <h2>Ottieni il 30% di sconto<br />sul tuo primo ordine</h2>
+        <p>
+          Unisciti a migliaia di clienti soddisfatti.<br />Offerta valida solo
+          per oggi.
+        </p>
+
+        <div class="promo-price">€69 <s>€99</s></div>
+        <p class="promo-timer">
+          ⏰ Scade tra: <strong id="promo-countdown">09:59</strong>
+        </p>
+
+        <button class="promo-cta" id="promo-cta">
+          Approfitta dell'offerta →
+        </button>
+        <button class="promo-dismiss" id="promo-dismiss">
+          No grazie, continuo senza sconto
+        </button>
+      </div>
+    </div>
   </body>
 </html>

@@ -407,6 +407,108 @@ const agreements = {
   11. MODIFICATIONS
   We may modify these Terms and Conditions at any time at our sole discretion. Modifications are effective when posted. It is your responsibility to review these Terms periodically. Continued use of the Website constitutes acceptance of any modifications.`,
   },
+  6: {
+    title: "Privacy Policy",
+    body: `PRIVACY POLICY
+
+Effective date: July 8, 2024
+
+We are committed to protecting your privacy online and providing you with the best experience on our Website. Please read the following Privacy Policy to understand how your personal information will be treated.
+
+DEFINITIONS
+- Personal Data: data about a living individual who can be identified from that data.
+- Usage Data: data collected automatically from the use of the Service or its infrastructure.
+- Cookies: small pieces of data stored on a User's device.
+- Data Controller: determines the purposes and manner in which personal data are processed. For this Privacy Policy, we are the Data Controller of your data.
+- Data Processor / Service Provider: processes data on behalf of the Data Controller.
+- User: the individual using our Service, corresponding to the Data Subject.
+
+1. INFORMATION COLLECTION AND USE
+We collect several types of information to provide and improve our Service.
+
+Personal Data may include:
+- Email address
+- First name and last name
+- Phone number
+- Address, State, Province, ZIP/Postal code, City
+- Cookies and Usage Data
+
+Usage Data may include your IP address, browser type and version, pages visited, time and date of visit, time spent on pages, and unique device identifiers.
+
+Location Data may be collected if you grant permission, used to provide and improve our Service features.
+
+Tracking Cookies Data: we use cookies and similar tracking technologies (beacons, tags, scripts) to track activity and improve our Service. Types of cookies used:
+- Session Cookies — to operate the Service
+- Preference Cookies — to remember your preferences and settings
+- Security Cookies — for security purposes
+
+2. USE OF DATA
+We use collected data to:
+- Provide and maintain our Service
+- Notify you about changes or updates
+- Allow participation in interactive features
+- Provide customer support
+- Improve our Service through analysis
+- Detect and address technical issues
+- Send news, special offers and relevant information (opt-out available)
+- Deliver personalized experiences and targeted advertisements
+- Track promotions, contests, and store activity
+
+3. SHARING OF DATA
+We do not sell, rent, or trade your personal information. We may share data with co-sponsors of promotions/contests or third parties helping complete transactions. When sharing, only the information necessary to complete your transaction is disclosed.
+
+4. SOCIAL MEDIA
+If you share our content through social media (Facebook, Twitter, Google+, etc.), those networks may record this and set a cookie. We cannot access cookies set by social networks.
+
+5. THIRD PARTY ADVERTISING
+We may share your information with third-party platform providers (Facebook, Google, Twitter, Datacrushers) to serve targeted advertising based on your profile and interests.
+
+6. YOUTUBE
+This Website uses YouTube API Services. By using the Website, you agree to YouTube's Terms of Service and YouTube's Privacy Policy.
+
+7. RETENTION OF DATA
+We retain your Personal Data only as long as necessary for the purposes set out in this Privacy Policy, to comply with legal obligations, resolve disputes, and enforce our agreements.
+
+8. TRANSFER OF DATA
+Your data may be transferred to and maintained on computers located outside your jurisdiction. By submitting your information, you consent to this transfer. We ensure your data is treated securely and in accordance with this Privacy Policy.
+
+9. DISCLOSURE OF DATA
+We may disclose your Personal Data:
+- In the event of a merger, acquisition or asset sale
+- When required by law or valid requests by public authorities
+- To comply with legal obligations, protect rights or property, prevent wrongdoing, or protect personal safety
+
+10. SECURITY OF DATA
+We strive to use commercially acceptable means to protect your Personal Data, but no method of transmission over the Internet is 100% secure.
+
+11. YOUR RIGHTS
+You have the right to:
+- Access and receive a copy of your Personal Data
+- Rectify any inaccurate Personal Data
+- Request deletion of your Personal Data
+- Data portability in a commonly used electronic format
+
+To exercise these rights, contact: kngmxrio.music@gmail.com
+
+12. SERVICE PROVIDERS & ANALYTICS
+We may employ third-party companies to facilitate our Service. These parties have access to your Personal Data only to perform tasks on our behalf.
+
+Google Analytics: used to monitor and analyze Service usage.
+More info: https://www.google.com/intl/en/policies/privacy/
+
+13. PAYMENTS
+Payment processing is handled by third-party processors. We do not store or collect your payment card details.
+- PayPal / Braintree: https://www.paypal.com/webapps/mpp/ua/privacy-full
+- Stripe: https://stripe.com/us/privacy
+
+14. CHILDREN'S PRIVACY
+Our Service does not address anyone under the age of 18. We do not knowingly collect Personal Data from children. If you believe your child has provided us with Personal Data, contact us at kngmxrio.music@gmail.com.
+
+15. CHANGES TO THIS PRIVACY POLICY
+We may update this Privacy Policy from time to time. Changes are effective when posted. You are advised to review this Privacy Policy periodically.
+
+Contact us: kngmxrio.music@gmail.com`,
+  },
 };
 
 const overlay = document.getElementById("modal-overlay");

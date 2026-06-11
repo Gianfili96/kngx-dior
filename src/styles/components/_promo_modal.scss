@@ -1,0 +1,235 @@
+// ── Variabili ──────────────────────────────────────
+$bg-modal: #080d1a;
+$border-modal: #1e3a6e;
+$blue-primary: #2f4ca3;
+$blue-hover: #4574ff;
+$blue-glow: #1a3a8f;
+$blue-badge-bg: #0f1e5a;
+$blue-badge-txt: #7a9de0;
+$text-white: #ffffff;
+$text-muted: #7a8eaa;
+$text-dim: #445577;
+$font-base: Inter, system-ui, sans-serif;
+
+// ── Breakpoints ────────────────────────────────────
+$mobile: 480px;
+
+// ── Animazioni ─────────────────────────────────────
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+}
+
+// ── Overlay ────────────────────────────────────────
+#promo-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  animation: fadeIn 0.35s ease forwards;
+  padding: 16px;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+// ── Modal ──────────────────────────────────────────
+.promo-modal {
+  position: relative;
+  background: $bg-modal;
+  border: 0.5px solid $border-modal;
+  border-radius: 20px;
+  padding: 48px 40px 36px;
+  max-width: 440px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  transform: translateY(20px);
+  animation: slideUp 0.35s ease forwards;
+  font-family: $font-base;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px;
+    height: 120px;
+    background: radial-gradient(
+      ellipse 100% 100% at 50% 100%,
+      rgba($blue-glow, 0.67),
+      transparent 70%
+    );
+    pointer-events: none;
+  }
+
+  h2 {
+    color: $text-white;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0 0 12px;
+  }
+
+  p {
+    color: $text-muted;
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 0 0 24px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 40px 24px 28px;
+    border-radius: 16px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+// ── Close ──────────────────────────────────────────
+.promo-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: none;
+  border: none;
+  color: $text-dim;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $text-white;
+  }
+}
+
+// ── Badge ──────────────────────────────────────────
+.promo-badge {
+  display: inline-block;
+  background: $blue-badge-bg;
+  color: $blue-badge-txt;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 5px 16px;
+  border-radius: 20px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile) {
+    font-size: 11px;
+    padding: 4px 12px;
+    margin-bottom: 16px;
+  }
+}
+
+// ── Prezzo ─────────────────────────────────────────
+.promo-price {
+  color: $text-white;
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  font-family: $font-base;
+
+  s {
+    font-size: 20px;
+    font-weight: 400;
+    color: $text-dim;
+    margin-left: 10px;
+    text-decoration: line-through;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 36px;
+
+    s {
+      font-size: 16px;
+    }
+  }
+}
+
+// ── Timer ──────────────────────────────────────────
+.promo-timer {
+  color: $text-dim;
+  font-size: 13px;
+  margin: 0 0 28px;
+
+  strong {
+    color: $blue-badge-txt;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 12px;
+    margin: 0 0 20px;
+  }
+}
+
+// ── CTA ────────────────────────────────────────────
+.promo-cta {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: $blue-primary;
+  color: $text-white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: $font-base;
+  transition: background 0.25s;
+
+  &:hover {
+    background: $blue-hover;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 13px;
+    font-size: 15px;
+  }
+}
+
+// ── Dismiss ────────────────────────────────────────
+.promo-dismiss {
+  display: block;
+  width: 100%;
+  margin-top: 14px;
+  background: none;
+  border: none;
+  color: $text-dim;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: $font-base;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $text-muted;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
