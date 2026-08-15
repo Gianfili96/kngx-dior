@@ -21,13 +21,16 @@
   });
 
   // countdown
-  let seconds = 599;
+  let seconds = 172800;
   const countdownEl = document.getElementById("promo-countdown");
 
   function updateCountdown() {
-    const m = String(Math.floor(seconds / 60)).padStart(2, "0");
+    const h = String(Math.floor(seconds / 3600)).padStart(2, "0");
+    const m = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
     const s = String(seconds % 60).padStart(2, "0");
-    countdownEl.textContent = m + ":" + s;
+
+    countdownEl.textContent = h + ":" + m + ":" + s;
+
     if (seconds > 0) seconds--;
   }
 
