@@ -1,12 +1,12 @@
 const descriptions = {
   basic: {
-    title: "WHY PLUS?",
+    title: "WHY BASIC?",
     text: "BASIC — For Starting Out",
     text1:
       "The Basic License is a great choice if you’re just starting out and want to release your song without spending too much. You get an untagged MP3 and can distribute your track up to 2,000 copies, with up to 200,000 audio and video streams. It’s perfect for independent artists testing a new song, building their audience, or releasing music on a smaller scale.",
   },
   premium: {
-    title: "WHY PLUS?",
+    title: "WHY PREMIUM?",
     text: "PREMIUM — For Growing Artists",
     text1:
       "The Premium License is made for artists who are ready to take their music a step further. You get high-quality WAV and MP3 files, higher distribution and streaming limits, plus the ability to use the beat for radio on one station. If you already have an audience and expect your song to reach more people, this license gives you more room to grow without jumping straight to the highest-priced option.",
@@ -18,7 +18,7 @@ const descriptions = {
       "The Premium Plus License is ideal for artists planning a serious release with a bigger audience or promotional campaign. You get WAV and MP3 files, track stems for professional mixing, up to 10,000 distribution copies and 1,000,000 audio and video streams. You can also use the song for radio on up to two stations. If you’re confident in the song and want more flexibility for professional promotion, this is the perfect middle ground between a standard lease and an unlimited license.",
   },
   unlimited: {
-    title: "WHY PLUS?",
+    title: "WHY UNLIMITED?",
     text: "UNLIMITED — For Maximum Freedom",
     text1:
       "The Unlimited License is the best option if you want to release your song without worrying about distribution or streaming limits. You receive WAV and MP3 files, full track stems, unlimited distribution, unlimited audio and video streams, unlimited music videos, and unlimited radio stations. It’s recommended for artists who believe the song has major potential, plan to promote it heavily, or simply want the freedom to grow without hitting the limits of a standard license.",
