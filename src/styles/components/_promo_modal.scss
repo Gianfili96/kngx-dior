@@ -205,6 +205,11 @@ $mobile: 480px;
     background: $blue-hover;
   }
 
+  a {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
   @media (max-width: $mobile) {
     padding: 13px;
     font-size: 15px;

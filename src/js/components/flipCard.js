@@ -1,35 +1,27 @@
 const descriptions = {
   basic: {
     title: "WHY PLUS?",
-    text: "The Basic license is perfect if you're just starting out.",
+    text: "BASIC — For Starting Out",
     text1:
-      "It gives you access to high-quality untagged files at an affordable price, ideal for independent artists releasing music on streaming platforms with a limited budget.",
-    text2:
-      "With 200,000 streams allowed, it covers most independent releases without any issues.",
+      "The Basic License is a great choice if you’re just starting out and want to release your song without spending too much. You get an untagged MP3 and can distribute your track up to 2,000 copies, with up to 200,000 audio and video streams. It’s perfect for independent artists testing a new song, building their audience, or releasing music on a smaller scale.",
   },
   premium: {
     title: "WHY PLUS?",
-    text: "The Basic license is perfect if you're just starting out.",
+    text: "PREMIUM — For Growing Artists",
     text1:
-      "It gives you access to high-quality untagged files at an affordable price, ideal for independent artists releasing music on streaming platforms with a limited budget.",
-    text2:
-      "With 200,000 streams allowed, it covers most independent releases without any issues.",
+      "The Premium License is made for artists who are ready to take their music a step further. You get high-quality WAV and MP3 files, higher distribution and streaming limits, plus the ability to use the beat for radio on one station. If you already have an audience and expect your song to reach more people, this license gives you more room to grow without jumping straight to the highest-priced option.",
   },
   premiumPlus: {
     title: "WHY PLUS?",
-    text: "The Basic license is perfect if you're just starting out.",
+    text: "PREMIUM PLUS — For Serious Releases",
     text1:
-      "It gives you access to high-quality untagged files at an affordable price, ideal for independent artists releasing music on streaming platforms with a limited budget.",
-    text2:
-      "With 200,000 streams allowed, it covers most independent releases without any issues.",
+      "The Premium Plus License is ideal for artists planning a serious release with a bigger audience or promotional campaign. You get WAV and MP3 files, track stems for professional mixing, up to 10,000 distribution copies and 1,000,000 audio and video streams. You can also use the song for radio on up to two stations. If you’re confident in the song and want more flexibility for professional promotion, this is the perfect middle ground between a standard lease and an unlimited license.",
   },
   unlimited: {
     title: "WHY PLUS?",
-    text: "The Basic license is perfect if you're just starting out.",
+    text: "UNLIMITED — For Maximum Freedom",
     text1:
-      "It gives you access to high-quality untagged files at an affordable price, ideal for independent artists releasing music on streaming platforms with a limited budget.",
-    text2:
-      "With 200,000 streams allowed, it covers most independent releases without any issues.",
+      "The Unlimited License is the best option if you want to release your song without worrying about distribution or streaming limits. You receive WAV and MP3 files, full track stems, unlimited distribution, unlimited audio and video streams, unlimited music videos, and unlimited radio stations. It’s recommended for artists who believe the song has major potential, plan to promote it heavily, or simply want the freedom to grow without hitting the limits of a standard license.",
   },
 };
 
@@ -51,8 +43,6 @@ function attachClick(card) {
           <p>${desc.text}</p>
           <br>
           <p>${desc.text1}</p>
-          <br>
-          <p>${desc.text2}</p>
         </div>
         <div class="btn_license"><a href="" class="btn_back">← Go back</a></div>
       `;
